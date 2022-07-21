@@ -1,0 +1,60 @@
+nav{
+    .navbar-nav{
+        justify-content: flex-end;
+    }
+}
+
+#services{
+    background-color: $color-terciario;
+    img{
+        width: 70px;
+        height: 70px;
+        object-fit: contain;
+    }
+}
+
+#portfolio{
+    .container{
+        .card{            
+            img:hover{
+                cursor: pointer;                
+            }
+        }
+    }
+    .modal{
+        .modal-content{
+            .modal-body{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+#just-default{
+    background-color: $color-cuarto;
+    img{
+        width: 100%;
+    }
+}
+
+#twitter{
+    background-color: $color-terciario;
+    
+}
+
+#who-is{
+    background: url(../img/bg-just.jpg);
+    background-position: center;
+    .degradado{
+        @include bg-color-fondo($color-primario, 0.3)
+
+    }
+}
+
+
+#contact{
+    background: url(../img/bg-contact.jpg);
+    background-position: center;    
+}
+

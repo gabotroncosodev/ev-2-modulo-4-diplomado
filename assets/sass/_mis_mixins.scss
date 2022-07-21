@@ -1,0 +1,17 @@
+@mixin bg-color-fondo($color, $alpha-color) {
+    background-color: rgba($color, $alpha-color);  
+}
+
+@mixin linea-h3($tema-oscuro-validador) {
+    @if $tema-oscuro-validador {
+        h3::after {
+            background-color: $color-primario;
+        }
+    }
+    @else{
+        h3::after {
+            background-color: $white;
+        }
+    }
+   
+}

@@ -1,0 +1,28 @@
+//Ajustes para Live Sass Compiler
+
+{
+    //donde se exportará el CSS expandido
+        "liveSassCompile.settings.formats": [{
+                "format": "expanded",
+                "extensionName": ".css",
+                "savePath": "assets/css"
+            },
+            {
+    //donde se exportará el CSS min
+                "extensionName": ".min.css",
+                "format": "compressed",
+                "savePath": "assets/dist/css"
+            }
+        ],
+    //carpetas excluidas, los 2 asteriscos representan el contenido de la carpeta
+        "liveSassCompile.settings.excludeList": [
+            "**/node_modules/**",
+            ".vscode/**",
+            "assets/bootstrap/**"
+        ],
+    //exportación de archivos .map
+        "liveSassCompile.settings.generateMap": true,
+        "liveSassCompile.settings.autoprefix": [
+            "defaults"
+        ]
+    }

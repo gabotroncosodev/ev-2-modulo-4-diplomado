@@ -1,0 +1,13 @@
+#footer{
+    background-color: $color-primario;
+    .container{
+        a{
+            color: $color-secundario;
+            text-decoration: none;
+        }
+        .a-link{
+            border-right: $color-secundario 3px solid;
+            padding-right: 10px;
+        }
+    }
+}

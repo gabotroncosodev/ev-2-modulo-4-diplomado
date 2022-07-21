@@ -1,0 +1,30 @@
+// Required
+@import '../bootstrap/scss/functions';
+@import '../bootstrap/scss/variables';
+@import '../bootstrap/scss/mixins';
+@import '../bootstrap/scss/root';
+
+$theme-colors: map-remove($theme-colors, "info", "light", "dark");
+
+// Optional
+@import '../bootstrap/scss/reboot';
+@import '../bootstrap/scss/type';
+// etc
+
+
+
+//* colores principales
+$color-primario: #353f46;
+$color-secundario:#899196;
+$color-terciario: #4bcaff;
+$color-cuarto: #515f67;
+
+$custom-colors: (
+  "color-primario": $color-primario,
+  "color-secundario":$color-secundario,
+  "color-terciario": $color-terciario
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors); 
+

@@ -1,0 +1,6 @@
+#header{    
+    width: 100%;
+    position: absolute;
+    color: white;
+    @include bg-color-fondo($color-primario, 0.6);
+}
